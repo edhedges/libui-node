@@ -21,13 +21,13 @@ const {
 	startLoop,
 	stopLoop,
 	onShouldQuit
-} = require('libui');
+} = require('libui-node');
 
 
 const menu = new UiMenu('File');
 menu.appendQuitItem();
 
-const window = UiWindow('Initialization Example', 400, 300, true);
+const win = UiWindow('Initialization Example', 400, 300, true);
 
 onShouldQuit(() => {
 	window.close();
